@@ -684,6 +684,10 @@
 
       async function gerarPDF() {
         try {
+          // esconder botões
+          const botoesRodaPe = document.getElementById("botoes-rodape")
+          botoesRodaPe.style.display = 'none'
+
           const { jsPDF } = window.jspdf;
           const doc = new jsPDF();
 
